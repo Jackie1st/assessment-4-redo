@@ -1,0 +1,6 @@
+<%= form_for [@category, @post] do |f| %>
+  Title: <%= f.text_field :title %><br />
+  Description: <%= f.text_field :description %><br />
+  Contact: <%= f.text_field :contact %><br />
+  <%= f.submit %>
+<% end %>

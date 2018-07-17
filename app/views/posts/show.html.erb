@@ -1,0 +1,8 @@
+<h3>Title: <%= @post.title %></h3>
+<p>Description: <%= @post.description %></p>
+<p>Contact: <%= @post.contact %></p>
+
+<p><%= link_to 'Edit', edit_category_post_path %></p>
+<p><%= link_to 'Delete', category_post_path, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+<p><%= link_to 'Back to Posts', category_posts_path %></p>
+<p><%= link_to 'Back to Categories', categories_path %></p>
